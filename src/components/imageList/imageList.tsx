@@ -4,6 +4,7 @@ import './ImageList.scss';
 import { Image, UnsplashImage } from '../../types/types';
 
 export const ImageList: React.FC = () => {
+
     const [query, setQuery] = useState('');
     const [images, setImages] = useState<Image[]>([]);
     const [selectedImage, setSelectedImage] = useState<Image | null>(null);
