@@ -1,0 +1,107 @@
+.main--container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 60px;
+
+    .input--container {
+        display: flex;
+
+        input {
+            width: 100%;
+            height: 40px;
+            border-radius: 5px 0 0 5px;
+            border: 1px solid #ccc;
+            padding: 0 10px;
+            font-size: 16px;
+            border: none;
+            margin-bottom: 10px;
+        }
+
+        button {
+            height: 40px;
+            border-radius: 0 5px 5px 0;
+            border: 1px solid #ccc;
+            border-left: none;
+            padding: 0 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            background-color: #000000;
+            color: #ffffff;
+        }
+    }
+
+    .image--grid {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        img {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        p {
+            width: 200px;
+            //make it small and truncate if it's too long
+            font-size: 12px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+
+    .modal {
+        //style this as a modal 
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        scale: 0.5;
+        display: flex;
+        justify-content: flex-start;
+        background-color: #0b0b0c;
+        padding: 50px;
+        border-radius: 12px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .modal--actions {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            flex: 1;
+
+            span {
+                //make it colour white and cursor pointer
+                color: #ffffff;
+                cursor: pointer;
+                font-weight: bolder;
+                font-size: 40px;
+            }
+
+            button {
+                //make it colour white and cursor pointer
+                color: #1a1919;
+                cursor: pointer;
+                font-weight: bolder;
+                font-size: 30px;
+                align-self: center;
+                padding: 20px;
+                border-radius: 12px;
+                margin-top: 50%;
+            }
+        }
+    }
+}

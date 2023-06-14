@@ -1,12 +1,12 @@
-import './App.css'
+import { ImageList } from "./components/imageList/imageList";
 
-function App() {
 
+const App = () => {
   return (
-    <>
-      
-    </>
-  )
-}
+    <div>
+      <ImageList />
+    </div>
+  );
+};
 
-export default App
+export default App;
